@@ -45,6 +45,7 @@ public class Program
         builder.Services.AddSingleton<IBotCommand, ClearCommand>();
         builder.Services.AddSingleton<IBotCommand, UndoCommand>();
         builder.Services.AddSingleton<IBotCommand, SummarizeCommand>();
+        builder.Services.AddSingleton<IBotCommand, JokeCommand>();
         builder.Services.AddSingleton<TelegramUpdateProcessor>();
         builder.Services.AddHttpClient<IChatApiClient, HttpChatApiClient>();
         builder.Services.AddSingleton<IChatModelRepository, ChatModelRepository>();

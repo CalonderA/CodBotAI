@@ -24,7 +24,8 @@ public class HelpCommand : IBotCommand
                       "/stats - показать статистику чата (количество сообщений и токенов)\n" +
                       "/clear - очистить историю чата и начать диалог заново\n" +
                       "/summarize - краткий пересказ диалога\n" +
-                      "/undo - удалить последнее сообщение";
+                      "/undo - удалить последнее сообщение\n" +
+                      "/joke - получить случайную шутку или цитату от AI";
 
         await bot.SendTextMessageAsync(chatId, message);
     }
